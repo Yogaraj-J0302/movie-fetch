@@ -1,0 +1,97 @@
+.game-container{
+    display: flex;
+    justify-content: center;
+    padding:20px;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+  }
+  
+  .box{
+    height:450px;
+    width:450px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: rgb(214, 214, 214);
+    border-radius: 20px;
+  }
+  .game-box{
+    height:120px;
+    width:120px;
+    border:1px solid black;
+    font-size: 100px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    border-radius: 20px;
+    background-color: whitesmoke;
+  }
+  .game-box:active{
+    color:black;
+    font-size: 80px;
+    transition: 0.5s;
+  }
+  .buttonContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn{
+    width:100px;
+    height:50px;
+    font-size: 25px;
+    border:none;
+    border-radius: 10px;
+    background-color:rgb(50, 50, 221);
+    color:white;
+    cursor: pointer;
+  }
+  .entry{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    border-radius: 10px;
+  }
+  .text{
+    color:red;
+    font-size: 50px;
+  }
+  .heading{
+    color:green;
+    position:relative;
+  }
+  .heading:after{
+    content:"";
+    height:3px;
+    width:0;
+    background-color: red;
+    position:absolute;
+    bottom:0;
+    left:0;
+    transition: 0.5s;
+  }
+  .heading:hover:after{
+    width:100%;
+  }
+  .heading span{
+    color:red;
+  }
+  @media screen and (min-width: 350px) {
+    .box{
+      height:350px;
+      width:350px;
+    }
+    .game-box{
+      height:100px;
+      width:100px;
+    }
+  }
+  body{
+    background-color: whitesmoke;
+  }
