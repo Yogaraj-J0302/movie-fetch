@@ -25,8 +25,7 @@ export function Movie({
   des,
   rating,
   alt,
-  key,
-  Movieadd,
+  index,
   setMovieadd,
 }) {
   const [Like, setLike] = useState(null);
@@ -69,7 +68,7 @@ export function Movie({
                 aria-label="des"
                 color="primary"
                 onClick={() => {
-                  history.push(`/movieslist/details/${key}`);
+                  history.push(`/movieslist/details/${index}`);
                 }}
               >
                 <InfoIcon />
@@ -130,7 +129,7 @@ export function Movie({
             aria-label="edit"
             color="primary"
             variant="contained"
-            onClick={() => history.push(`/movieslist/edit/${key}`)}
+            onClick={() => history.push(`/movieslist/edit/${index}`)}
           >
             <EditIcon />
           </IconButton>

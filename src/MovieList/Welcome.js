@@ -1,6 +1,7 @@
 import { Movie } from "./MovieList";
 import {API} from './global';
 import {useState,useEffect } from "react";
+import './movie.css';
 export function Welcome() {
   const [Movieadd,setMovieadd]=useState([]);
 const getMovies=()=>{
@@ -16,7 +17,7 @@ const getMovies=()=>{
         <b>Movie Fetching from APIs</b>
       </h1>
       <div className="row movie-container">
-        {Movieadd.map((e,index) => {
+        {Movieadd.map((e,key) => {
           return (
             <Movie
               name={e.movieName}
@@ -25,7 +26,7 @@ const getMovies=()=>{
               rating={e.rating}
               alt={e.alt}
               id={e.id}
-              key={index}
+              index={key}
               Movieadd={Movieadd}
               setMovieadd={setMovieadd} />
           );

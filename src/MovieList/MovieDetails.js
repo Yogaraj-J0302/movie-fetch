@@ -15,16 +15,17 @@ export function MovieDetails() {
   },[]);
   const history=useHistory();
   return (
-    <div>
+    <div className="movieDetails">
+      <div className="video">
       <iframe
-        Width="800"
-        height="500"
+        className="iframe"
         src={movie.Trailer}
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen>
       </iframe>
+      </div>
       <h2>{movie.movieName}</h2>
       <p>{movie.des}</p>
       <Button

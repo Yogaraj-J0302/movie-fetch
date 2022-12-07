@@ -37,7 +37,7 @@ lable {
 .movie-container {
   justify-content: center;
 }
-button {
+/* button {
   border: none;
   font-size: 25px;
   background-color: rgb(72, 148, 235);
@@ -46,17 +46,10 @@ button {
   margin: 10px;
   border: 2px solid rgb(0, 38, 255);
   font-weight: bold;
-}
+} */
 #card-g {
   height: 100%;
 }
-.dislikebtn {
-  color: red;
-}
-.likebtn {
-  color: rgb(128, 233, 87);
-}
-span {
-  color: red;
-  margin-right: 5px;
+.route-container{
+  margin:10px;
 }
